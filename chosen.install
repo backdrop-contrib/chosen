@@ -37,6 +37,7 @@ function chosen_update_1000() {
   $config->set('disable_search_threshold', update_variable_get('chosen_disable_search_threshold', FALSE));
   $config->set('allow_single_deselect', update_variable_get('chosen_allow_single_deselect', FALSE));
   $config->set('include', update_variable_get('chosen_include', 2));
+  $config->save();
 
   // Delete created variables.
   update_variable_del('chosen_minimum_single');
