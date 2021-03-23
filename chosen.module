@@ -194,7 +194,7 @@ function chosen_pre_render_select($element) {
   global $theme, $language;
 
   $is_admin = path_is_admin(current_path()) || current_path() == 'system/ajax' || $theme == config_get('system.core', 'admin_theme');
-  $chosen_include = config_get('chosen.settings', 'chosen_include');
+  $chosen_include = config_get('chosen.settings', 'include');
   if ($chosen_include != CHOSEN_INCLUDE_EVERYWHERE && $is_admin == $chosen_include) {
     return $element;
   }
