@@ -104,8 +104,8 @@ function chosen_library_info() {
 
   $info['chosen'] = array(
     'title' => 'Chosen',
-    'website' => 'http://harvesthq.github.io/chosen',
-    'version' => '1.8.2',
+    'website' => 'https://github.com/harvesthq/chosen',
+    'version' => '1.8.7',
     'js' => array(
       $library_path . '/chosen.jquery.min.js' => array(),
     ),
