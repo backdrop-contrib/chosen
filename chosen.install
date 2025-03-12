@@ -14,8 +14,8 @@ function chosen_uninstall() {
 /**
  * Implements hook_update_last_removed().
  */
-function hook_update_last_removed() {
-  // People upgrading from Drupal will need at least schema verison 7204.
+function chosen_update_last_removed() {
+  // People upgrading from Drupal will need at least schema version 7204.
   return 7204;
 }
 
